@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devashish Rawat</title>
+  <meta name="description" content="Devashish Rawat — CS undergraduate and AI/ML engineer building end-to-end ML and GenAI systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="menu" aria-label="Menu">☰</button>
+  <div class="wrap">
+  <nav id="side" aria-label="Sections">
+    <ul>
+      <li><a href="#about" class="active">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <div class="center">
+        <img class="avatar" src="assets/profile.jpg" alt="Devashish Rawat">
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/devashish-rawat01" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/Devashish-Rawat1" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.kaggle.com/devashish001" target="_blank" rel="noopener" aria-label="Kaggle"><i class="fa-brands fa-kaggle"></i></a>
+          <a href="https://www.instagram.com/devashish__rawat" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://steamcommunity.com/profiles/76561199557673549/" target="_blank" rel="noopener" aria-label="Steam"><i class="fa-brands fa-steam"></i></a>
+          <a href="mailto:devashish.rawat717@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <hr class="short">
+        <!-- Put your resume PDF at assets/Devashish_Rawat_Resume.pdf -->
+        <a class="cv" href="assets/Devashish_Rawat_Resume.pdf" target="_blank" rel="noopener">Download CV</a>
+        <hr class="short">
+      </div>
+      <p>Devashish Rawat is a Computer Science undergraduate (CGPA 9.13/10) who builds end-to-end machine learning and GenAI systems, from a four-model demand-forecasting benchmark to an LLM document-summarization pipeline running in a live automation suite at Bioneau.</p>
+      <p>He is most interested in LLMs, AI agents and applied machine learning, and works mainly in Python with PyTorch, TensorFlow and scikit-learn. He is a Kaggle Notebook Expert and is currently looking for an AI/ML Engineer role.</p>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <div class="entry">
+        <img class="logo" src="assets/juet.png" alt="JUET">
+        <h3>Computer Science <em>(B.Tech)</em></h3>
+        <p class="meta"><em><strong>Relevant Coursework:</strong></em> Probability &amp; Statistics, Linear Algebra, Machine Learning, Deep Learning, Generative AI and LLMs</p>
+        <p class="strong">Jaypee University of Engineering &amp; Technology</p>
+        <p>2023 – 2027</p>
+        <p>9.13 / 10</p>
+      </div>
+      <div class="entry">
+        <img class="logo" src="assets/kv.png" alt="Kendriya Vidyalaya Sangathan">
+        <h3>Schooling</h3>
+        <p class="strong">Kendriya Vidyalaya</p>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <!-- TODO: replace the href="#" Live Demo links and repo links with the exact URLs -->
+      <div class="entry">
+        <h3>DemandSense</h3>
+        <p class="org"><em>Demand Forecasting &amp; Inventory Optimization</em></p>
+        <ul class="bullets">
+          <li>• Retail forecasting pipeline on 913K daily sales records (10 stores, 50 products) with 13 automated time-series features.</li>
+          <li>• Benchmarked XGBoost, LightGBM and two LSTMs; XGBoost won at RMSE 7.91 / MAPE 12.44%, beating deep learning on tabular data.</li>
+          <li>• Inventory Planner (EOQ, safety stock, reorder point per SKU) with SHAP explainability, deployed as a 7-page Streamlit dashboard.</li>
+        </ul>
+        <p class="meta"><em>Python · XGBoost · LightGBM · LSTM · TensorFlow · SHAP · Streamlit</em></p>
+        <p><a href="https://github.com/Devashish-Rawat1" target="_blank" rel="noopener">[GitHub]</a> <a href="#" target="_blank" rel="noopener">[Live Demo]</a></p>
+      </div>
+      <div class="entry">
+        <h3>Chrono</h3>
+        <p class="org"><em>Multi-Agent Personal AI Assistant</em></p>
+        <ul class="bullets">
+          <li>• 4-stage agent pipeline (onboarding → task analysis → optimization → explanation): a Groq LLM classifies cognitive load and urgency while a custom constraint solver places every block conflict-free, publishing to Google Calendar and Excel.</li>
+          <li>• Voice-driven modes: Music Mode for hands-free Spotify control, and Chrono Code, which drafts per-file commit messages from live git diffs and pushes on voice confirmation.</li>
+          <li>• Persistent SQLite memory and an LLM intent router so free-form commands resolve to the right tool without hardcoded regex.</li>
+        </ul>
+        <p class="meta"><em>Python · FastAPI · Llama-3.3-70B · Google Calendar &amp; Spotify APIs · SQLite · Render</em></p>
+        <p><a href="https://github.com/Devashish-Rawat1" target="_blank" rel="noopener">[GitHub]</a> <a href="#" target="_blank" rel="noopener">[Live Demo]</a></p>
+      </div>
+      <div class="entry">
+        <h3>CarScope AI</h3>
+        <p class="org"><em>Used Car Fraud Detection &amp; Price Prediction</em></p>
+        <ul class="bullets">
+          <li>• Pipeline over ~141K Indian used-car listings, fusing an XGBoost fair-price regressor with Isolation Forest, LOF and DBSCAN into a weighted 0–100 fraud score.</li>
+          <li>• 2-of-3 consensus vote flags 1.29% as high-confidence fraud; Streamlit app with real-time scoring and 3D PCA anomaly visualizations.</li>
+        </ul>
+        <p class="meta"><em>Python · XGBoost · scikit-learn · PCA · Plotly · Streamlit</em></p>
+        <p><a href="https://github.com/Devashish-Rawat1" target="_blank" rel="noopener">[GitHub]</a> <a href="#" target="_blank" rel="noopener">[Live Demo]</a></p>
+      </div>
+      <div class="entry">
+        <h3>StyleFusion</h3>
+        <p class="org"><em>Real-time Neural Style Transfer</em></p>
+        <ul class="bullets">
+          <li>• Built from scratch in PyTorch with VGG-19 and AdaIN; deployed on Hugging Face Spaces.</li>
+        </ul>
+        <p><a href="https://github.com/Devashish-Rawat1" target="_blank" rel="noopener">[GitHub]</a> <a href="#" target="_blank" rel="noopener">[Live Demo]</a></p>
+      </div>
+      <div class="entry">
+        <h3>Legal RAG Assistant</h3>
+        <p class="org"><em>Retrieval-Augmented Generation</em></p>
+        <ul class="bullets">
+          <li>• Answers legal questions from a ChromaDB vector store of legal documents, with a Streamlit chat interface.</li>
+        </ul>
+        <p><a href="https://github.com/Devashish-Rawat1" target="_blank" rel="noopener">[GitHub]</a></p>
+      </div>
+    </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="entry">
+        <img class="logo" src="assets/bioneau.png" alt="Bioneau">
+        <h3>AI Automation Intern</h3>
+        <p class="org"><em>Bioneau</em></p>
+        <ul class="bullets">
+          <li>• Shipped a local automation suite: a TallyPrime → Google Sheets payment-reminder pipeline validated on 377 real invoices, 5 live Power Automate flows, and a Flask-based HR document generator replacing manual paperwork.</li>
+          <li>• Built an LLM document-summarization feature (Groq API) with automatic map-reduce chunking, live per-section progress via Server-Sent Events, and retry/fallback handling for API errors.</li>
+          <li>• Ran stakeholder interviews across Finance, Sales and Operations to map the order-to-cash workflow, surfacing 2 confirmed inefficiencies now feeding the automation roadmap.</li>
+        </ul>
+        <p class="meta"><em>Python · Flask · Groq API · TallyPrime API · Google Sheets API · Power Automate</em></p>
+        <p class="date"><em>August 2026 – Now</em></p>
+      </div>
+    </section>
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="entry">
+        <img class="logo" src="assets/aws-dlai.png" alt="AWS and DeepLearning.AI">
+        <h3>Generative AI with Large Language Models</h3>
+        <p class="org"><em>DeepLearning.AI &amp; AWS</em></p>
+        <p>Coursera · Transformers, PEFT fine-tuning, RLHF &amp; LLM applications</p>
+        <p class="strong"><em>July 2026</em></p>
+        <p><a href="https://www.coursera.org/account/accomplishments/verify/CIWMWFVDKCET" target="_blank" rel="noopener">[Certificate]</a></p>
+      </div>
+      <div class="entry">
+        <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h3>Supervised Machine Learning: Regression and Classification</h3>
+        <p class="org"><em>DeepLearning.AI &amp; Stanford Online</em></p>
+        <p>Coursera · Machine Learning Specialization</p>
+        <p class="strong"><em>August 2025</em></p>
+        <p><a href="https://coursera.org/verify/MV2T53O8IKDJ" target="_blank" rel="noopener">[Certificate]</a></p>
+      </div>
+    </section>
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <div class="entry">
+        <div class="logo-icon"><i class="fa-brands fa-kaggle"></i></div>
+        <h3>Kaggle Notebook Expert</h3>
+        <p class="org"><em>Kaggle</em></p>
+        <p>Achieved Expert tier for high-quality machine learning notebooks and technical contributions.</p>
+        <p><a href="https://www.kaggle.com/devashish001" target="_blank" rel="noopener">[Profile]</a></p>
+      </div>
+      <div class="entry">
+        <div class="logo-icon"><i class="fa-solid fa-book-open"></i></div>
+        <h3>Popular Notebooks</h3>
+        <p class="org"><em>Kaggle</em></p>
+        <p>PS S6E10: LightGBM OOF</p>
+        <p><a href="https://www.kaggle.com/code/devashish001/ps-s6-e10-lightgbm-oof" target="_blank" rel="noopener">[Notebook]</a></p>
+        <p>Anime Dataset Analysis</p>
+        <p><a href="https://www.kaggle.com/code/devashish001/anime-dataset-analysis" target="_blank" rel="noopener">[Notebook]</a></p>
+      </div>
+    </section>
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <div class="entry">
+        <div class="logo-icon"><i class="fa-solid fa-pencil"></i></div>
+        <p>Drawing &amp; sketching, playing video games, and watching anime and movies.</p>
+      </div>
+      <h4 class="sub">Artwork Showcase</h4>
+      <div class="gallery">
+        <button type="button" data-full="assets/artwork1.jpeg"><img src="assets/artwork1.jpeg" alt="Colour drawing of a crowd of pirate and navy characters" loading="lazy"></button>
+        <button type="button" data-full="assets/artwork2.jpeg"><img src="assets/artwork2.jpeg" alt="Manga-style page layout with a coloured central figure" loading="lazy"></button>
+        <button type="button" data-full="assets/artwork3.jpeg"><img src="assets/artwork3.jpeg" alt="Marker drawing of a red and gold armoured figure breaking apart" loading="lazy"></button>
+      </div>
+      <p class="hint">Click an image to view it larger.</p>
+      <h4 class="sub">My Favourites</h4>
+      <div class="favs">
+        <div class="entry">
+        <img class="logo fav" src="assets/zelda_logo.jpg" alt="The Legend of Zelda: Breath of the Wild logo">
+        <p class="strong">Game</p>
+        <p>The Legend of Zelda: Breath of the Wild</p>
+        </div>
+        <div class="entry">
+        <img class="logo fav" src="assets/lord-of-the-rings-logo.png" alt="The Lord of the Rings logo">
+        <p class="strong">Movie</p>
+        <p>The Lord of the Rings trilogy</p>
+        </div>
+        <div class="entry">
+        <img class="logo fav round" src="assets/dragon-ball-logo.jpg" alt="Dragon Ball logo">
+        <p class="strong">Anime</p>
+        <p>Dragon Ball</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>© <span id="year">2026</span> Devashish Rawat</footer>
+  </main>
+  </div>
+  <div id="lightbox" hidden><img alt=""></div>
+  <script src="script.js"></script>
+</body>
+</html>
