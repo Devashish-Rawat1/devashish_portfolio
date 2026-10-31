@@ -30,7 +30,7 @@
     <section id="about">
       <h2>About</h2>
       <div class="center">
-        <img class="avatar" src="assets/profile.jpg" alt="Devashish Rawat">
+        <img class="avatar" src="assets/profile.jpeg" alt="Devashish Rawat">
         <div class="socials">
           <a href="https://www.linkedin.com/in/devashish-rawat01" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="https://github.com/Devashish-Rawat1" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
@@ -70,49 +70,57 @@
         <h3>DemandSense</h3>
         <p class="org"><em>Demand Forecasting &amp; Inventory Optimization</em></p>
         <ul class="bullets">
-          <li>• Retail forecasting pipeline on 913K daily sales records (10 stores, 50 products) with 13 automated time-series features.</li>
-          <li>• Benchmarked XGBoost, LightGBM and two LSTMs; XGBoost won at RMSE 7.91 / MAPE 12.44%, beating deep learning on tabular data.</li>
-          <li>• Inventory Planner (EOQ, safety stock, reorder point per SKU) with SHAP explainability, deployed as a 7-page Streamlit dashboard.</li>
+          <li>• Engineered 13 lag, rolling-mean, seasonality and aggregate features over 913K daily sales records (10 stores, 50 items, 2013–2017), validating on the held-out 2017 year.</li>
+          <li>• Benchmarked XGBoost, LightGBM and two LSTMs; XGBoost won (RMSE 7.91, MAPE 12.44%), outperforming both LSTMs (best 8.37 / 13.11%) because the engineered features already capture temporal context.</li>
+          <li>• Turned forecasts into decisions with an adjustable inventory planner (EOQ, safety stock, reorder point) and SHAP waterfall explanations of each prediction.</li>
+          <li>• Shipped a 7-page Streamlit dashboard with EDA, 7–90 day forecasts, model comparison and CSV batch prediction.</li>
         </ul>
         <p class="meta"><em>Python · XGBoost · LightGBM · LSTM · TensorFlow · SHAP · Streamlit</em></p>
-        <p><a href="https://github.com/Devashish-Rawat1" target="_blank" rel="noopener">[GitHub]</a> <a href="#" target="_blank" rel="noopener">[Live Demo]</a></p>
+        <p><a href="https://github.com/Devashish-Rawat1/DemandSense" target="_blank" rel="noopener">[GitHub]</a> <a href="https://e-commerce-demand-forecasting-mjlqjwbeigqfx8abcq8mua.streamlit.app/" target="_blank" rel="noopener">[Live Demo]</a></p>
       </div>
       <div class="entry">
         <h3>Chrono</h3>
         <p class="org"><em>Multi-Agent Personal AI Assistant</em></p>
         <ul class="bullets">
-          <li>• 4-stage agent pipeline (onboarding → task analysis → optimization → explanation): a Groq LLM classifies cognitive load and urgency while a custom constraint solver places every block conflict-free, publishing to Google Calendar and Excel.</li>
+          <li>• Designed a 4-stage agent pipeline (onboarding → task analysis → optimization → explanation): Llama-3.3-70B on Groq classifies focus type and urgency, while a deterministic constraint solver places every block conflict-free around meals and fixed commitments.</li>
+          <li>• Outputs a Google Calendar schedule (OAuth 2.0 with PKCE), a styled Excel planner and a plain-language weekly summary, with LLM → OpenRouter → deterministic fallbacks for reliability.</li>
           <li>• Voice-driven modes: Music Mode for hands-free Spotify control, and Chrono Code, which drafts per-file commit messages from live git diffs and pushes on voice confirmation.</li>
           <li>• Persistent SQLite memory and an LLM intent router so free-form commands resolve to the right tool without hardcoded regex.</li>
         </ul>
         <p class="meta"><em>Python · FastAPI · Llama-3.3-70B · Google Calendar &amp; Spotify APIs · SQLite · Render</em></p>
-        <p><a href="https://github.com/Devashish-Rawat1" target="_blank" rel="noopener">[GitHub]</a> <a href="#" target="_blank" rel="noopener">[Live Demo]</a></p>
+        <p><a href="https://github.com/Devashish-Rawat1/chrono" target="_blank" rel="noopener">[GitHub]</a> <a href="https://chrono-60aj.onrender.com/" target="_blank" rel="noopener">[Live Demo]</a></p>
       </div>
       <div class="entry">
         <h3>CarScope AI</h3>
         <p class="org"><em>Used Car Fraud Detection &amp; Price Prediction</em></p>
         <ul class="bullets">
-          <li>• Pipeline over ~141K Indian used-car listings, fusing an XGBoost fair-price regressor with Isolation Forest, LOF and DBSCAN into a weighted 0–100 fraud score.</li>
-          <li>• 2-of-3 consensus vote flags 1.29% as high-confidence fraud; Streamlit app with real-time scoring and 3D PCA anomaly visualizations.</li>
+          <li>• Built an end-to-end pipeline (ingestion, feature engineering, training, anomaly detection, evaluation) over ~141K Indian used-car listings, run through a single script.</li>
+          <li>• Fused an XGBoost price-deviation signal with Isolation Forest, LOF and DBSCAN into a weighted 0–100 fraud score; added nearest-core-point inference so DBSCAN can score unseen listings.</li>
+          <li>• A 2-of-3 detector consensus flags 1.29% of listings (1,457) as high-confidence fraud, cutting single-model false alarms.</li>
+          <li>• Deployed a Streamlit app that scores listings in real time with the same preprocessing as training, plus 3D PCA views of each detector's outliers.</li>
         </ul>
         <p class="meta"><em>Python · XGBoost · scikit-learn · PCA · Plotly · Streamlit</em></p>
-        <p><a href="https://github.com/Devashish-Rawat1" target="_blank" rel="noopener">[GitHub]</a> <a href="#" target="_blank" rel="noopener">[Live Demo]</a></p>
+        <p><a href="https://github.com/Devashish-Rawat1/CarScope-AI" target="_blank" rel="noopener">[GitHub]</a> <a href="https://carscope-ai-hmrqvpiry8ewehhz3kvevw.streamlit.app/" target="_blank" rel="noopener">[Live Demo]</a></p>
       </div>
       <div class="entry">
         <h3>StyleFusion</h3>
         <p class="org"><em>Real-time Neural Style Transfer</em></p>
         <ul class="bullets">
-          <li>• Built from scratch in PyTorch with VGG-19 and AdaIN; deployed on Hugging Face Spaces.</li>
+          <li>• Implemented AdaIN style transfer in PyTorch: frozen ImageNet VGG-19 encoder (to relu4_1) plus a decoder trained from scratch with content and multi-layer style losses.</li>
+          <li>• Trained on Kaggle in two phases (160 epochs at 256×256, then 100 epochs at 512×512) to support arbitrary, unseen style images in a single forward pass.</li>
+          <li>• Deployed on Hugging Face Spaces with an adjustable style-strength slider, before/after comparison and downloadable output.</li>
         </ul>
-        <p><a href="https://github.com/Devashish-Rawat1" target="_blank" rel="noopener">[GitHub]</a> <a href="#" target="_blank" rel="noopener">[Live Demo]</a></p>
+        <p><a href="https://github.com/Devashish-Rawat1/StyleFusion-HF" target="_blank" rel="noopener">[GitHub]</a> <a href="https://huggingface.co/spaces/Drazan/StyleFusion-HF" target="_blank" rel="noopener">[Live Demo]</a></p>
       </div>
       <div class="entry">
         <h3>Legal RAG Assistant</h3>
         <p class="org"><em>Retrieval-Augmented Generation</em></p>
         <ul class="bullets">
-          <li>• Answers legal questions from a ChromaDB vector store of legal documents, with a Streamlit chat interface.</li>
+          <li>• Built a RAG pipeline that answers legal questions from a ChromaDB knowledge base, with scripts to ingest documents, verify the store and test queries.</li>
+          <li>• Split providers for cost and speed: local sentence-transformers (all-MiniLM-L6-v2) embeddings run free and offline, while Groq-hosted Llama models handle answer generation only.</li>
+          <li>• Exposed through a Streamlit chat interface with a configurable model (Llama-3.1-8B for speed, Llama-3.3-70B for deeper reasoning).</li>
         </ul>
-        <p><a href="https://github.com/Devashish-Rawat1" target="_blank" rel="noopener">[GitHub]</a></p>
+        <p><a href="https://github.com/Devashish-Rawat1/LegalAssistant" target="_blank" rel="noopener">[GitHub]</a></p>
       </div>
     </section>
     <section id="experience">
